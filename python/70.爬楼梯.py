@@ -35,26 +35,11 @@
 # 1.  1 阶 + 1 阶 + 1 阶
 # 2.  1 阶 + 2 阶
 # 3.  2 阶 + 1 阶
-
-# 输入： 4
-# 输出： 5
-# 解释： 有三种方法可以爬到楼顶。
-# 1.  1 阶 + 1 阶 + 1 阶 + 1
-# 2.  1 阶 + 2 阶 + 1
-# 3.  2 阶 + 1 阶 + 1
-# 4.  2 + 2
-# 5.  1 + 1 + 2
+# 
+# 
 #
 
 # @lc code=start
 class Solution:
     def climbStairs(self, n: int) -> int:
-        su = []
-        for i in range(n):
-            if i < 3:
-                su.append(i+1)
-            su.append(su[i-1] + su[i])
-
-        return su[n-1]
 # @lc code=end
-
